@@ -8,8 +8,29 @@ public class ProcessoSeletivo {
 
 		System.out.println("Processo Seletivo");
 
-		selecaoCandidato();
+		imprimirSelecionados();
 
+	}
+	
+	static void imprimirSelecionados () {
+		String [] candidatos = {"FELIPE","MÁRCIA","JULIA","PAULO","AUGUSTO"};	
+		
+		System.out.println("Imprimindo a lista de candidatos informando o indice do elemento");
+		
+		// FOrma normal
+		for (int indice = 0; indice < candidatos.length; indice ++) {
+			System.out.println("O Candidato de numero " + (indice+1) + " é " + candidatos[indice] + "\n");
+				
+		}
+		
+		System.out.println("Forma abreviada de intereção for each.");
+		
+		for(String candidato: candidatos) {
+			
+			System.out.println("O Candidato selecionado foi " + candidato + "\n");
+		}
+	
+		
 	}
 
 	static void selecaoCandidato() {
